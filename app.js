@@ -1,6 +1,5 @@
 var app = angular.module("calculatorApp", []);
 app.controller("calculatorController", function($scope){
-    console.log("hellow rahul");
     $scope.operand1 = 0;
     $scope.operand2 = 0;
     $scope.result = 0;
