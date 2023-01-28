@@ -1,0 +1,30 @@
+<html ng-app="calculatorApp">
+    <head>
+        <title>
+            Learning
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+
+    <body ng-controller="calculatorController">
+        <h1>simple calculator</h1>
+        <div>
+            <form action="">
+                <input type="number" ng-model="operand1">
+                <select ng-model="operator">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                </select>
+                <input type="number" ng-model="operand2">
+                <br>
+                <br>
+                <button ng-click="calculate()">calculate</button>
+            </form>
+        </div>
+        <p>result = {{result}}</p>
+        
+    </body>
+</html>
