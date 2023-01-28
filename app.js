@@ -6,6 +6,7 @@ app.controller("calculatorController", function($scope){
     $scope.operator = "";
 
     $scope.calculate = function() {
+        console.log("hi rahul, How are you!!!");
         switch($scope.operator) {
             case "+":
                 $scope.result = $scope.operand1 + $scope.operand2;
